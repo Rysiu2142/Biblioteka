@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="adminPanel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="910.0" prefHeight="215.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Admin.Admin">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="365.0" prefWidth="910.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="ordersTab" text="Zamówienia">
+               <fx:include fx:id="ordersPanel" source="OrdersTab.fxml" />
+            </Tab>
+
+            <Tab text="Pracownicy">
+               <fx:include fx:id="employeePanel" source="EmployeeTab.fxml" />
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

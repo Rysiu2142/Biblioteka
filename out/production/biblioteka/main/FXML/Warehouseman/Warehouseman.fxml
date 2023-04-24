@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="warehousemanPanel" minHeight="0.0" minWidth="0.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Warehouseman.Warehouseman">
+   <children>
+      <TabPane fx:id="tabPane" prefWidth="910.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+
+            <Tab text="Wypożyczenia/Zwroty">
+               <fx:include fx:id="ordersTab" source="OrdersTab.fxml" />
+            </Tab>
+            <Tab text="Książki">
+               <fx:include fx:id="booksTab" source="BooksTab.fxml" />
+            </Tab>
+            <Tab text="Sugestie">
+               <fx:include fx:id="sugestionsTab" source="SugestionsTab.fxml" />
+            </Tab>
+            <Tab text="Historia wypożyczeń">
+               <fx:include fx:id="historyTab" source="HistoryTab.fxml" />
+            </Tab>
+
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
